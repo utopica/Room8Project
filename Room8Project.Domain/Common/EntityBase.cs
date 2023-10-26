@@ -15,8 +15,7 @@ namespace Room8Project.Domain.Common
         public DateTimeOffset? ModifiedOn { get; set; }
 
         public DateTimeOffset? DeletedOn { get; set; }
-        public bool IsDeleted? { get; set; }
-    public bool IsDeleted? { get; set; }
+        public bool IsDeleted { get; set; }
 
     }
 }
