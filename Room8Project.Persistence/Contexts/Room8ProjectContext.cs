@@ -17,7 +17,7 @@ namespace Room8Project.Persistence.Contexts
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseNpgsql();
+            optionsBuilder.UseNpgsql(Configurations.GetString("ConnectionStrings:PostgreSQL"));
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

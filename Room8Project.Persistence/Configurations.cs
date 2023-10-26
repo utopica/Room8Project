@@ -13,7 +13,7 @@ namespace Room8Project.Persistence
         {
             ConfigurationManager configurationManager = new();
 
-            string path = $"{Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName}\\Infrastructure\\Week_7_3.Persistence";
+            string path = $"{Directory.GetParent(Directory.GetCurrentDirectory()).FullName}\\Room8Project.Persistence\\";
 
             configurationManager.SetBasePath(path);
             configurationManager.AddJsonFile("PrivateInformations.json");
